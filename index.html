@@ -223,11 +223,22 @@
       font-weight: 700;
       margin-bottom: 0.8rem;
     }
+    .skill-group {
+      margin-bottom: 1rem;
+    }
+    .skill-group-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+      border-left: 3px solid #2563eb;
+      padding-left: 0.6rem;
+    }
     .skill-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
-      margin-top: 1rem;
+      margin-bottom: 0.8rem;
     }
     .skill-tag {
       background: #f1f5f9;
@@ -297,6 +308,29 @@
     }
     .social-icons a:hover {
       color: #2563eb;
+    }
+    .cert-list, .internship-list {
+      list-style: none;
+      margin-top: 0.5rem;
+    }
+    .cert-list li, .internship-list li {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: baseline;
+      gap: 0.7rem;
+    }
+    .cert-list i, .internship-list i {
+      color: #2563eb;
+      width: 1.4rem;
+      font-size: 0.9rem;
+    }
+    .sub-section-title {
+      font-weight: 600;
+      font-size: 1rem;
+      margin: 0.8rem 0 0.4rem 0;
+      color: #1e293b;
+      border-left: 3px solid #2563eb;
+      padding-left: 0.6rem;
     }
     footer {
       text-align: center;
@@ -403,8 +437,57 @@
     <section id="skills">
       <h2 class="section-title">Skill Development & Certificates</h2>
       <div class="grid-2col">
-        <div class="card"><div class="card-icon"><i class="fas fa-laptop-code"></i></div><h3>Technical Skills</h3><div class="skill-tags"><span class="skill-tag">HTML/CSS</span><span class="skill-tag">JavaScript</span><span class="skill-tag">Python</span><span class="skill-tag">Java</span><span class="skill-tag">C</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">Linux</span></div></div>
-        <div class="card"><div class="card-icon"><i class="fas fa-certificate"></i></div><h3>Certifications & Internship</h3><ul style="margin-left:1rem;"><li>Certification Course: Serverless Framework on AWS</li><li>Internship: Frontend Developer at Elysium Academy</li><li>PostgreSQL Certification</li><li>Linux Certification</li><li>Machine Learning Certification</li><li>Smart India Hackathon (SIH) Participant</li></ul></div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Technical Skills</h3>
+          <div class="skill-group">
+            <div class="skill-group-title">Frontend</div>
+            <div class="skill-tags">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-title">Backend</div>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">Express</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-title">Programming Languages</div>
+            <div class="skill-tags">
+              <span class="skill-tag">C</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <div class="skill-group-title">Other Tools</div>
+            <div class="skill-tags">
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Linux</span>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Certifications & Internship</h3>
+          <div class="sub-section-title">Internship</div>
+          <ul class="internship-list">
+            <li><i class="fas fa-briefcase"></i> Frontend Developer at Elysium Academy</li>
+          </ul>
+          <div class="sub-section-title">Certifications</div>
+          <ul class="cert-list">
+            <li><i class="fas fa-certificate"></i> Serverless Framework on AWS</li>
+            <li><i class="fas fa-certificate"></i> Introduction to Machine Learning with R</li>
+            <li><i class="fas fa-certificate"></i> PostgreSQL Certification</li>
+            <li><i class="fas fa-certificate"></i> Linux Certification</li>
+            <li><i class="fas fa-certificate"></i> Machine Learning Certification</li>
+            <li><i class="fas fa-certificate"></i> Smart India Hackathon (SIH) Participant</li>
+          </ul>
+        </div>
       </div>
     </section>
 
